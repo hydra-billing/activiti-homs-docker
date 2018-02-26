@@ -4,7 +4,8 @@ COPY assets /assets/
 COPY ./*.sh /
 RUN apt-get update \
  && apt-get install -y zip \
-		       git
+		       git \
+		       postgresql-client
 
 # download and deploy Latera Activiti Extension Pack
 WORKDIR /tmp
