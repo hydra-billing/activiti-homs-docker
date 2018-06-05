@@ -2,6 +2,7 @@ FROM latera/activiti:5.19.0
 
 COPY assets /assets/
 COPY ./*.sh /
+RUN chmod +x /wait_for_postgres.sh
 RUN apt-get update \
  && apt-get install -y zip \
 		       git \
