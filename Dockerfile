@@ -1,4 +1,4 @@
-FROM latera/activiti:5.19.0
+FROM latera/activiti:latest
 
 COPY assets /assets/
 COPY ./*.sh /
