@@ -1,7 +1,9 @@
 #!/bin/bash
 set -m
 
-bash /entrypoint.sh &
+/wait_for_postgres.sh
+
+/entrypoint.sh &
 if [ $? -ne 0 ]; then
 	echo "Container start failed, now exiting..."
 	exit
