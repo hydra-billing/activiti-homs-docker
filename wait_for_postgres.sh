@@ -3,6 +3,7 @@
 set -e
 
 export PGHOST=$BPM_DB_HOST
+export PGPORT=$BPM_DB_PORT
 export PGUSER=$BPM_DB_USER
 export PGPASSWORD=$BPM_DB_PASSWORD
 
